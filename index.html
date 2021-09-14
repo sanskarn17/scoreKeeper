@@ -9,15 +9,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-    <h1><span id="p1display">0</span> to <span id="p2display">0</span></h1>
-    <label for="winningscore">Play Up To</label>
-    <input type="number" name="" id="winningscore" min="1" placeholder="5">
-    <button>OK</button>
-    <br>
-    <br>
-    <button id="p1button">+1 Player One</button>
-    <button id="p2button">+1 Player Two</button>
-    <button id="reset">Reset</button>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-centered title is-1 is-size-3">
+                          Score Keeper
+                        </p>
+                      </header>
+                    <div class="card-image">
+                      <figure class="image is-2by1">
+                        <img src="https://images.pexels.com/photos/411207/pexels-photo-411207.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Score Keeper Image">
+                      </figure>
+                    </div>
+                    <div class="card-content">                  
+                      <div class="content">
+                        <h1 class="title is-1 is-size-1 "><span id="p1display">0</span> to <span id="p2display">0</span></h1>
+                        <div class="control field is-horizontal columns" >
+                            <label for="winningscore" class="label column is-2">Play Up To</label>
+                            <input type="number" name="" id="winningscore" min="1" placeholder="5"  class="input is-success is-rounded is-normal is-hovered column is-3 is-offset-1">
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1button" class="is-primary button card-footer-item">+1 Player One</button>    
+                        <button id="p2button" class="is-info button card-footer-item">+1 Player Two</button>    
+                        <button id="reset" class="is-danger button card-footer-item">Reset</button>    
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    
     <script src="index.js"></script>
 </body>
 </html>
